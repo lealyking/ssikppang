@@ -1,0 +1,8 @@
+._*
+.DS_Store
+.env
+.env.*
+node_modules/
+.openai/
+backups/
+*.zip
