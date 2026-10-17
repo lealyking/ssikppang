@@ -14,3 +14,8 @@ Subjects:
 - politician: glasses, dark hair, beige suit, green tie, blank sheet, reassuring gesture
 
 President and politician are fictional and must not resemble actual people or use party/flag symbols.
+
+## Volleyball logo mascot
+Built-in image generation, reference: existing transparent character atlas for style only.
+Prompt: one generic fictional female volleyball player, full-body jump spike with volleyball, cute chibi proportions, confident funny expression, short tied dark hair, cream and muted olive sports uniform, no number/flag/sponsor. Warm uneven dark-brown pencil outlines and soft colored-pencil watercolor, peach cheeks. Transparent background, compact silhouette readable at logo size, full feet and ball visible. No text, watermark, border or scenery.
+Final asset: dist/assets/logo-volleyball-spike.png
