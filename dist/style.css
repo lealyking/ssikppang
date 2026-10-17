@@ -120,3 +120,58 @@ body.love-mode .start{background:#f0c9ad}body.love-mode .word{color:#f0c9ad}body
 .character-art.char-13{background-image:url('assets/character-president.png')}
 .character-art.char-14{background-image:url('assets/character-politician.png')}
 @media(max-width:600px){#target-picker{padding:26px 18px}.targets.picker-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.picker-grid .character-art{width:85px}.picker-grid .character-card{min-height:144px}.picker-grid .character-card strong{font-size:21px}.picker-grid .character-card small{font-size:13px}.target-picker-trigger{padding:17px}.picker-question{font-size:30px}.picked-target{gap:10px}.picked-target .character-art{width:88px}.picker-change{font-size:16px}.picked-target strong{font-size:28px}}
+
+/* Readable Noto Sans KR for body text and controls; handwriting for display copy. */
+@font-face{font-family:'Noto Sans KR';font-style:normal;font-weight:100 900;font-display:swap;src:url('assets/fonts/NotoSansKR-Variable.ttf') format('truetype')}
+:root{--font-body:'Noto Sans KR','Apple SD Gothic Neo',sans-serif;--font-display:'Nanum Pen Script',cursive}
+body{font-family:var(--font-body);font-size:16px;line-height:1.6;word-break:keep-all;overflow-wrap:break-word}
+.logo,h1,h2,.word,.picker-question,.comic-bubble,.comic-sfx,.result-score{font-family:var(--font-display)}
+button,input,select{font-family:var(--font-body);line-height:1.5}
+.intro p{font-size:16px;line-height:1.85;color:#62685b}
+.eyebrow{font-size:12px;font-weight:600}.steps{font-size:12px;gap:10px 18px}
+.note,.pronunciation,.local,.records .eyebrow{font-size:12px;line-height:1.7}.note{color:#68705d}
+.language{font-size:13px}input,select{font-size:15px}.quiet{font-size:14px}.demo{font-size:13px}.start{font-size:17px;font-weight:700;padding:15px 18px}
+.mode-help{font-size:14px}.play-modes button{font-size:15px}.readings{font-size:12px;line-height:1.6}.disclosure{font-size:12px;color:#a4ac97;line-height:1.8}
+.site-nav a{font-size:14px}.footer-nav a,.font-license{font-size:12px}footer{font-size:12px;line-height:1.8}.font-license{white-space:normal}
+.picked-target strong{font-size:23px;font-weight:700}.picked-target small{font-size:14px;line-height:1.7}.picker-change{font-size:13px}.picker-kicker{font-size:12px}.picker-description{font-size:15px;line-height:1.7}
+.picker-grid .character-card strong{font-size:16px;line-height:1.5}.picker-grid .character-card small{font-size:12px;line-height:1.6}.picker-grid .character-card{min-height:170px}.stage-caption,.comic-scene .stage-caption{font-size:13px;line-height:1.6}
+.reaction-scale{font-size:12px}.empty{font-size:15px}.score-row{font-size:15px}.score-row small{font-size:12px}.record-explainer{font-size:13px}.game-context p{font-size:16px;line-height:1.85}.context-links a{font-size:14px}
+dialog p{font-size:15px;line-height:1.8}dialog label{font-size:14px}.tap-pad span{font-size:16px}.tap-pad strong{font-size:36px}.tap-pad small{font-size:12px}
+@media(max-width:800px){.intro p{font-size:16px}.site-nav a{font-size:12px}.site-nav{gap:10px}.readings{font-size:12px}.score-row{font-size:13px}.score-row small{font-size:11px}.picked-target strong{font-size:22px}.picked-target small{font-size:13px}.picker-change{font-size:12px}.picker-grid .character-card strong{font-size:15px}.picker-grid .character-card small{font-size:11px}.picker-grid .character-card{min-height:151px}.comic-scene .stage-caption{font-size:12px}.game-context p{font-size:16px}.tap-pad span{font-size:16px}}
+
+/* Volleyball spike mascot beside the main wordmark. */
+.main-brand{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;flex-shrink:0}.main-brand>span{color:inherit;margin:0}.spike-mascot{display:block;width:80px;height:80px;object-fit:contain;flex:none;transform:rotate(-7deg);transition:transform .2s ease}.main-brand:hover .spike-mascot{transform:translateY(-3px) rotate(3deg)}
+@media(max-width:800px){.main-header{height:auto;min-height:88px;padding:8px 18px 13px;gap:3px 14px;flex-wrap:wrap}.main-header .main-brand{font-size:30px;gap:3px}.spike-mascot{width:60px;height:60px}.main-header .site-nav{order:3;flex-basis:100%;justify-content:center;gap:28px}.main-header .site-nav a{font-size:13px;min-height:28px}.main-header #ranking{margin-left:auto;font-size:12px;padding:10px 0}}
+@media(prefers-reduced-motion:reduce){.spike-mascot{transition:none}.main-brand:hover .spike-mascot{transform:rotate(-7deg)}}
+
+/* Half-width target selector with its original vertical spacing. */
+.target-picker-trigger{width:50%;padding:20px 12px;border-radius:20px}.picker-question{font-size:32px;line-height:1.2}.picked-target{position:relative;justify-content:center;margin-top:8px;padding-bottom:27px;gap:8px}.picked-target .character-art{width:82px}.picked-target strong{font-size:23px;line-height:1.4}.picked-target small{font-size:13px;line-height:1.7}.picker-change{position:absolute;bottom:0;right:0;font-size:13px}
+@media(max-width:800px){.target-picker-trigger{padding:17px 10px}.picker-question{font-size:30px}.picked-target{flex-direction:column;gap:4px}.picked-target .character-art{width:88px}.picked-target strong{font-size:22px}.picked-target small{font-size:12px}.picker-change{font-size:12px}.picked-target>span:not(.character-art):not(.picker-change){text-align:center}}
+
+.target-picker-trigger{height:198px;display:flex;flex-direction:column;justify-content:center}.picked-target{width:100%;min-width:0}.picked-target>span:not(.character-art):not(.picker-change){min-width:0}.picked-target small{overflow-wrap:anywhere}
+@media(max-width:800px){.target-picker-trigger{height:170px}.picked-target{flex-direction:row;gap:6px}.picked-target .character-art{width:54px}.picked-target strong{font-size:18px}.picked-target small{font-size:11px}.picked-target>span:not(.character-art):not(.picker-change){text-align:left}}
+
+/* A single, wider game surface with target and nickname together. */
+.focused-game{display:block;max-width:1080px;padding:32px 40px 0}.focused-game .arena{position:relative;top:auto;width:100%;padding:30px 40px;border-radius:24px}.game-setup{display:grid;grid-template-columns:minmax(220px,.85fr) minmax(0,1.15fr);align-items:center;gap:30px;padding-bottom:24px;margin-bottom:24px;border-bottom:1px solid #454b3c}.game-setup .target-picker-trigger{width:100%;height:auto;min-height:114px;padding:12px 16px;background:#292e23;border-color:#596348;color:#fafbf4;text-align:left}.game-setup .picker-question{font-size:27px}.game-setup .picked-target{padding:0;margin-top:4px;justify-content:flex-start;gap:10px}.game-setup .picked-target .character-art{width:55px}.game-setup .picked-target strong{font-size:18px}.game-setup .picked-target small{font-size:12px;color:#b2bba5}.game-setup .picker-change{position:static;margin-left:auto;color:#d4fa49;font-size:12px}.target-name-field{min-width:0}.target-name-field label{display:block;font-size:15px;color:#f0f2e9}.target-name-field label span{font-size:11px;color:#9ca68d;margin-left:8px}.target-name-field input{font-size:18px;border-color:#687458;padding:13px 0;color:#fafbf4}.target-name-field input::placeholder{color:#9ca58f}.target-name-field p{font-size:12px;color:#a7b19a;line-height:1.7;margin:9px 0 0}.focused-game .play-modes{max-width:480px;margin-inline:auto}.focused-game .language{margin-top:14px}.focused-game .word{margin-top:0}.focused-game .comic-scene{max-width:620px;margin:14px auto 18px;min-height:260px}.focused-game .meter,.focused-game .readings,.focused-game #start,.focused-game .tap-pad{max-width:650px;margin-left:auto;margin-right:auto}.focused-game .readings{margin-bottom:16px}.focused-game .reaction-scale{max-width:650px;margin-inline:auto}.focused-game .records{margin-top:32px}.focused-game footer{margin-top:30px}.focused-game .disclosure{max-width:680px;margin:12px auto 0}
+@media(max-width:800px){.focused-game{padding:20px 16px 0}.focused-game .arena{padding:20px 18px;border-radius:19px}.game-setup{grid-template-columns:1fr;gap:18px;padding-bottom:20px;margin-bottom:20px}.game-setup .target-picker-trigger{min-height:100px}.game-setup .picked-target{flex-direction:row}.game-setup .picked-target .character-art{width:46px}.game-setup .picker-question{font-size:25px}.target-name-field input{font-size:16px}.focused-game .comic-scene{min-height:250px}.focused-game .word{font-size:76px}.focused-game .records{margin-top:24px}}
+
+/* Character-only picker and speech anchored to its speaker. */
+.game-setup{grid-template-columns:140px minmax(0,1fr);gap:24px}.game-setup .target-picker-trigger{min-height:100px;padding:4px;background:transparent;border:0;box-shadow:none;align-items:center}.game-setup .target-picker-trigger:hover{background:#ffffff08}.game-setup .picked-target{justify-content:center;margin:0;gap:0}.game-setup .picked-target .character-art{width:88px}.game-setup .picked-target>span:not(.character-art):not(.picker-change){position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.game-setup .picker-change{position:static;margin:0 0 0 5px;color:#b9c7a3;font-size:22px}.comic-sfx:empty{display:none}
+.comic-scene .face .comic-bubble,.comic-scene[data-reaction="4"] .face .comic-bubble{left:calc(50% + 55px);right:auto;top:12px;bottom:auto;max-width:160px;width:max-content;padding:9px 14px;font-size:20px;line-height:1.25;transform:rotate(4deg);animation:none}.comic-scene .face .comic-bubble:after{left:8px;bottom:-7px;width:12px;height:12px;transform:skew(-18deg) rotate(38deg)}
+@media(max-width:800px){.game-setup{grid-template-columns:90px minmax(0,1fr);gap:14px}.game-setup .target-picker-trigger{min-height:88px}.game-setup .picked-target .character-art{width:72px}.game-setup .picker-change{font-size:18px;margin-left:0}.target-name-field label{font-size:13px}.target-name-field label span{display:block;margin-left:0;font-size:10px}.target-name-field p{font-size:11px}.comic-scene .face .comic-bubble,.comic-scene[data-reaction="4"] .face .comic-bubble{left:calc(50% + 34px);top:10px;max-width:114px;padding:8px 10px;font-size:17px}}
+
+.word{font-family:var(--font-display),var(--font-body)}.word[data-script="latin"]{font-size:clamp(34px,7vw,76px);letter-spacing:0;overflow-wrap:normal}.sound-spelling-note{font-size:11px;line-height:1.6;color:#a1aa94;text-align:center;margin:6px 0 0}
+
+.tap-sound-toggle{display:block;margin:10px auto 0;padding:5px 12px;border:1px solid #556046;border-radius:18px;background:transparent;color:#d5dfc3;font-size:12px;line-height:1.5}.tap-sound-toggle:hover{background:#ffffff0a}.tap-sound-toggle[aria-pressed="false"]{color:#a5ae99;border-color:#454d3d}
+
+/* Narrower desktop game surface, retaining the mobile layout. */
+.focused-game{max-width:900px}
+
+.focused-game .minimal-footer{justify-content:center;margin-top:24px;padding:20px 0 24px}.minimal-footer a{font-family:var(--font-body);font-size:12px;color:#747b69;text-decoration:none}.minimal-footer a:hover{text-decoration:underline;text-underline-offset:4px}
+
+.focused-game .minimal-footer{flex-direction:column;align-items:center;gap:12px;text-align:center}.minimal-footer .footer-message{margin:0;font-family:var(--font-display);font-size:27px;line-height:1.45;color:#626b53}@media(max-width:600px){.minimal-footer .footer-message{font-size:24px}}
+
+.minimal-footer .footer-message{white-space:nowrap;font-size:clamp(15px,3.7vw,27px);letter-spacing:-.3px}
+
+/* Keep the closing sentence on one line, even on narrow phones. */
+.minimal-footer .footer-message{max-width:100%;white-space:nowrap;font-size:clamp(10px,3.7vw,27px);letter-spacing:-.3px}
